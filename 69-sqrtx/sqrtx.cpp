@@ -1,7 +1,7 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        long possibility=0;
+        int possibility=0;
         for(long i=1;i<=x;i++){
             if(long (i*i)<=x){
                 possibility=i;
