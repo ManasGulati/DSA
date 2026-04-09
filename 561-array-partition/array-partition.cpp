@@ -8,6 +8,6 @@ public:
         }
         return sum;
         //trying to get 0ms in solution by multiple submission so it can be updated on github 
-        //bcoz it is optim
+        //bcoz it 
     }
 };
