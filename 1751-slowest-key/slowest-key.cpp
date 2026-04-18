@@ -7,13 +7,10 @@ public:
             if ((releaseTimes[i]-releaseTimes[i-1])>max){
                 max=(releaseTimes[i]-releaseTimes[i-1]);
                 key=keysPressed[i];
-            }else if((releaseTimes[i]-releaseTimes[i-1])==max){
-                if(keysPressed[i]>key){
-                    key=keysPressed[i];
-                }
-                continue;
-            }else{
-                continue;
+            }else if(((releaseTimes[i]-releaseTimes[i-1])==max)&&(keysPressed[i]>key)){
+                
+                key=keysPressed[i];
+                
             }
         }
         return key;
