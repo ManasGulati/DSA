@@ -9,7 +9,6 @@ public:
             if(arr[i]>1){
                 return i;
             }
-
         }
 
         return -1;
