@@ -12,6 +12,7 @@ public:
         }
         return true;
     }
+    
     bool validPalindrome(string s) {
         int first=-1,last=-1;
         int i=0,j=s.length()-1;
