@@ -24,6 +24,7 @@ public:
             i++;
             j--;
         }
+        
         if(first==-1){
             return true;
         }
