@@ -9,6 +9,7 @@ public:
         }
         return co;
     }
+    
     int countSubstrings(string s) {
         int count=0;
         for(int i=0;i<s.length();i++){
