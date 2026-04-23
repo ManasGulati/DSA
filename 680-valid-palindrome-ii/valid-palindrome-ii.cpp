@@ -16,6 +16,7 @@ public:
     bool validPalindrome(string s) {
         int first=-1,last=-1;
         int i=0,j=s.length()-1;
+        
         while(i<j){
             if(s[i]!=s[j]){
                 first=i;
@@ -28,7 +29,7 @@ public:
         if(first==-1){
             return true;
         }
-        
+
         string s1=s;
         string s2=s;
         s1.erase(first,1);
