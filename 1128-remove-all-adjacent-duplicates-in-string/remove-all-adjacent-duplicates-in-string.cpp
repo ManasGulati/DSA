@@ -1,7 +1,6 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-        
         string ans;
         int i=0;
 
