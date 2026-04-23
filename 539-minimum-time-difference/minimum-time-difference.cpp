@@ -1,5 +1,6 @@
 class Solution {
 public:
+
     int findMinDifference(vector<string>& timePoints) {
         vector<int> min;
         for(auto i:timePoints){
