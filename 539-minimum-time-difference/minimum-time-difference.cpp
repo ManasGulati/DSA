@@ -6,7 +6,6 @@ public:
         for(auto i:timePoints){
             min.push_back(stoi(i.substr(0,2))*60+stoi(i.substr(3,2)));
         }
-
         sort(min.begin(),min.end());
         int ans=INT_MAX;
 
