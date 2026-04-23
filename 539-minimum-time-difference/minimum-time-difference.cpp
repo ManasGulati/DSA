@@ -9,7 +9,6 @@ public:
         sort(min.begin(),min.end());
         int ans=INT_MAX;
         for(int i=0;i<min.size()-1;i++){
-
             if(min[i+1]-min[i]<ans){
                 ans=min[i+1]-min[i];
             }
