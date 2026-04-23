@@ -28,12 +28,13 @@ public:
         if(first==-1){
             return true;
         }
+        
         string s1=s;
         string s2=s;
         s1.erase(first,1);
         bool ans1=pa(s1);
         if(!ans1){
-            
+
             s2.erase(last,1);
             ans1=pa(s2);
         }
