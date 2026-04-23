@@ -2,7 +2,6 @@ class Solution {
 public:
 
     int countint(string s,int i,int j){
-
         int co=0;
         while(i>=0&&j<s.length()&&s[i]==s[j]){
             co++;
