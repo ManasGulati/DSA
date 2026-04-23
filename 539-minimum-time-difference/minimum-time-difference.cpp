@@ -2,12 +2,13 @@ class Solution {
 public:
     int findMinDifference(vector<string>& timePoints) {
         vector<int> min;
+        
         for(auto i:timePoints){
             int hr=stoi(i.substr(0,2))*60;
             int mi=stoi(i.substr(3,2));
             min.push_back(hr+mi);
         }
-        
+
         sort(min.begin(),min.end());
         int ans=INT_MAX;
 
