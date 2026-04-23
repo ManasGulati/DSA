@@ -9,11 +9,9 @@ public:
             }
             i++;
             j--;
-            
         }
         return true;
     }
-
     bool validPalindrome(string s) {
         int first=-1,last=-1;
 
