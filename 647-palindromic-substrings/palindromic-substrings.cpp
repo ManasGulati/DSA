@@ -9,7 +9,7 @@ public:
             j++;
         }
         return co;
-        
+
     }
 
     int countSubstrings(string s) {
@@ -21,5 +21,6 @@ public:
 
         }
         return count;
+        
     }
 };
