@@ -14,7 +14,6 @@ public:
                 ans=min[i+1]-min[i];
             }
         }
-
         if(min[min.size()-1]-min[0]>720 &&1440%(min[min.size()-1]-min[0])<ans){
             ans=1440%(min[min.size()-1]-min[0]);
         }
