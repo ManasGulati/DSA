@@ -34,8 +34,7 @@ public:
         if(!ans1){
             s2.erase(last,1);
             ans1=pa(s2);
-        }
-        
+        } 
         return ans1;
     }
 
