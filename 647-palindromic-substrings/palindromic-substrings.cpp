@@ -14,7 +14,7 @@ public:
         for(int i=0;i<s.length();i++){
             int a=countint(s,i,i);
             int b=countint(s,i,i+1);
-            count=count+a+b;
+            count+=a+b;
 
         }
         return count;
