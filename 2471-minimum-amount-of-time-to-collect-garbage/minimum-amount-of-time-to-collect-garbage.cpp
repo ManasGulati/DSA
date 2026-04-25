@@ -54,6 +54,7 @@ public:
                 min+=travel[i-1];
             }
         }
+        
         min+=M[0]+P[0]+G[0];
         return min;
         
