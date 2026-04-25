@@ -17,7 +17,6 @@ public:
             }
             i++;
         }
-
         int min=0;
         bool foundM=false;
         bool foundP=false;
