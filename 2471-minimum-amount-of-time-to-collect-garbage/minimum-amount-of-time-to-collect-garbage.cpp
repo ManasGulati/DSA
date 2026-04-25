@@ -51,13 +51,10 @@ public:
                 min+=G[i];
                 min+=travel[i-1];
             }else if(G[i]==0&&foundG){
-           
                 min+=travel[i-1];
             }
         }
-
         min+=M[0]+P[0]+G[0];
-        return min;
-        
+        return min;  
     }
 };
