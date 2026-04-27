@@ -5,20 +5,26 @@ public:
         for(auto ch:s1){
             pattern[ch-'a']++;
         }
-        int ws=s1.length();
-        for(int i=0;i<s2.size();i++){
-            int wi=i;
-            int rl=wi+ws;
-            vector <int>wf(26,0);
-            while(rl<=s2.size()&&wi<i+ws){
-                wf[s2[wi++]-'a']++;
+        int i=0,j=0;
+        vector<int>wf(26,0);
+
+        while(j<s2.length()){
+
+            wf[s2[j]-'a']++;
+            if(j-i+1<s1.length()){
+                j++;
+                continue;
             }
             if(wf==pattern){
                 return true;
+            }else{
+                wf[s2[i]-'a']--;
+                i++;
+                j++;
             }
+
         }
         return false;
-        
         
     }
 };
