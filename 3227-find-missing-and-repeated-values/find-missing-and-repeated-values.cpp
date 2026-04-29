@@ -2,6 +2,7 @@ class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
         int n=grid.size()*grid.size();
+        int esum=(n*(n+1))/2;
         int asum=0;
         unordered_set<int>s;
         vector <int>ans;
@@ -14,8 +15,9 @@ public:
                 s.insert(i);
             }
         }
+        
         asum-=ans[0];
-        ans.push_back(abs((n*(n+1))/2-asum));
+        ans.push_back(abs(esum-asum));
         return ans;
         
     }
