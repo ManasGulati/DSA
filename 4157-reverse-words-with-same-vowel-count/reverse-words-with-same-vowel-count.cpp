@@ -17,13 +17,14 @@ public:
         }else{
             idx=s.find(' ');
         }
+        
         for(int i=0;i<idx;i++){
             if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
                 vc++;
             }
         }
-        for(int i=idx+1;i<s.length();i++){
 
+        for(int i=idx+1;i<s.length();i++){
             int temp=0;
             int si=i;
             while(i<s.length()&&s[i]!=' '){
