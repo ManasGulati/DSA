@@ -20,7 +20,6 @@ public:
         }else{
             idx=s.find(' ');
         }
-
         for(int i=0;i<idx;i++){
             if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
                 vc++;
@@ -43,7 +42,7 @@ public:
                 rev(s,si,i-1);
             }
         }
-        
+
         return s;
     }
 };
