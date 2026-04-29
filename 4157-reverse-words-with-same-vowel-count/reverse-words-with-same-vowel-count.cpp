@@ -10,14 +10,16 @@ public:
     }
 
     string reverseWords(string s) {
+
         int vc=0;
         int idx=-1;
+        
         if(s.find(' ')==string::npos){
             return s;
         }else{
             idx=s.find(' ');
         }
-        
+
         for(int i=0;i<idx;i++){
             if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
                 vc++;
