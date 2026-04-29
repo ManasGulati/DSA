@@ -12,6 +12,7 @@ public:
             m[val]=idx;
             idx++;
         }
+        
         return ans;
     }
 };
