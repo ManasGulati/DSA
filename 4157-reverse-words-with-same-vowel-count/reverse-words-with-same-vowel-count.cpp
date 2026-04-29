@@ -32,7 +32,6 @@ public:
                 }
                 i++;
             }
-
             if(temp==vc){
                 rev(s,si,i-1);
             }
