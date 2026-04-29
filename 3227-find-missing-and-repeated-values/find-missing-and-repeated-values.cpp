@@ -9,7 +9,6 @@ public:
         vector <int>ans;
         for(auto v:grid){
             for(auto i:v){
-
                 asum+=i;
                 if(s.find(i)!=s.end()){
                     ans.push_back(i);
