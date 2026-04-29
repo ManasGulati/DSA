@@ -30,13 +30,7 @@ public:
                 i++;
             }
             if(temp==vc){
-                int p=si;
-                int q=i-1;
-                while(p<q){
-                    swap(s[p],s[q]);
-                    p++;
-                    q--;
-                }
+                rev(s,si,i-1);
             }
         }
         return s;
