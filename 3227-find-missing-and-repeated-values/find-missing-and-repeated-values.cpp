@@ -16,7 +16,7 @@ public:
             }
         }
         asum-=ans[0];
-        ans.push_back(abs(esum-asum));
+        ans.push_back(abs((n*(n+1))/2-asum));
         return ans;
         
     }
