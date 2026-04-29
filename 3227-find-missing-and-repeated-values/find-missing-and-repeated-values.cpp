@@ -9,10 +9,11 @@ public:
         int asum=0;
 
         unordered_set<int>s;
-        
+
         vector <int>ans;
 
         for(auto v:grid){
+            
             for(auto i:v){
                 asum+=i;
                 if(s.find(i)!=s.end()){
