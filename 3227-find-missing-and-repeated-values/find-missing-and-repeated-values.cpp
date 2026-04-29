@@ -21,8 +21,9 @@ public:
 
                     ans.push_back(i);
                 }
-                
+
                 s.insert(i);
+                
             }
         }
         asum-=ans[0];
