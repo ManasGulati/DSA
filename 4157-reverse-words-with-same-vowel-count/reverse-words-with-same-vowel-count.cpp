@@ -3,7 +3,6 @@ public:
 
     void rev(string &s,int p,int q){
         
-        
         while(p<q){
             swap(s[p],s[q]);
             p++;
