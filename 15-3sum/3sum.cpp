@@ -21,8 +21,7 @@ public:
                     continue;
                 }
                 if(nums[j]+nums[k]==(-1)*nums[i]){
-                    vector<int> temp={nums[i],nums[j],nums[k]};
-                    ans.push_back(temp);
+                    ans.push_back({nums[i],nums[j],nums[k]});
                     j++;
                     k--;
                 }else if(nums[j]+nums[k]>(-1)*nums[i]){
@@ -30,7 +29,7 @@ public:
                 }else{
                     j++;
                 }
-                
+
             }
         }
         return ans;
