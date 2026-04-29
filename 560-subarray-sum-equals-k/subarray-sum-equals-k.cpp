@@ -28,9 +28,10 @@ public:
                 count+=(*m.find(ps[i]-k)).second;
             }
             if(m.find(ps[i])==m.end()){
-                
+
                 m[ps[i]]=0;
             }
+            
             m[ps[i]]++;
         }
         return count;
