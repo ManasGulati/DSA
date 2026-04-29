@@ -2,6 +2,8 @@ class Solution {
 public:
 
     void rev(string &s,int p,int q){
+        
+        
         while(p<q){
             swap(s[p],s[q]);
             p++;
@@ -27,6 +29,7 @@ public:
         }
 
         for(int i=idx+1;i<s.length();i++){
+            
             int temp=0;
             int si=i;
            
