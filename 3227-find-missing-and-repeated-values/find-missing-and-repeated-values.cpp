@@ -8,7 +8,6 @@ public:
         unordered_set<int>s;
         vector <int>ans;
         for(auto v:grid){
-
             for(auto i:v){
 
                 asum+=i;
@@ -16,7 +15,6 @@ public:
                     ans.push_back(i);
                 }
                 s.insert(i);
-                
             }
         }
 
