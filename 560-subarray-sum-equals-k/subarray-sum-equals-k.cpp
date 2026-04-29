@@ -4,7 +4,6 @@ public:
         vector<int>ps(nums.size());
         int count=0;
         for(int i=0;i<nums.size();i++){
-
             if(i==0){
                 ps[0]=nums[0];
                 continue;
