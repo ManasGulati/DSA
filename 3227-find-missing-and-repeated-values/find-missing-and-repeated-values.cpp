@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
-        
+
         int n=grid.size()*grid.size();
         int esum=(n*(n+1))/2;
         int asum=0;
@@ -19,5 +19,6 @@ public:
         asum-=ans[0];
         ans.push_back(abs(esum-asum));
         return ans;
+        
     }
 };
