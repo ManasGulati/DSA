@@ -18,9 +18,10 @@ public:
 
                 asum+=i;
                 if(s.find(i)!=s.end()){
-                    
+
                     ans.push_back(i);
                 }
+                
                 s.insert(i);
             }
         }
