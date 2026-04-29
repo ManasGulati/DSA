@@ -24,7 +24,7 @@ public:
             }
         }
         for(int i=idx+1;i<s.length();i++){
-            
+
             int temp=0;
             int si=i;
             while(i<s.length()&&s[i]!=' '){
@@ -33,6 +33,7 @@ public:
                 }
                 i++;
             }
+            
             if(temp==vc){
                 rev(s,si,i-1);
             }
