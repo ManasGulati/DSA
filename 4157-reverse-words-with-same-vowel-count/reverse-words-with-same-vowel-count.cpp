@@ -10,7 +10,6 @@ public:
     }
 
     string reverseWords(string s) {
-
         int vc=0;
         int idx=-1;
         if(s.find(' ')==string::npos){
