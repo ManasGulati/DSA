@@ -17,13 +17,10 @@ public:
         }
         unordered_map<int,int>m;
         for(int i=0;i<nums.size();i++){
-
             if(ps[i]==k){
-
                 count++;
             }
             if(m.find(ps[i]-k)!=m.end()){
-
                 count+=(*m.find(ps[i]-k)).second;
             }
             if(m.find(ps[i])==m.end()){
