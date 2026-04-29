@@ -1,6 +1,7 @@
 class Solution {
 public:
     void rev(string &s,int p,int q){
+        
         while(p<q){
             swap(s[p],s[q]);
             p++;
@@ -33,7 +34,7 @@ public:
                 rev(s,si,i-1);
             }
         }
-        
+
         return s;
         
     }
