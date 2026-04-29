@@ -6,9 +6,10 @@ public:
 
         int esum=(n*(n+1))/2;
         int asum=0;
+        
         unordered_set<int>s;
         vector <int>ans;
-        
+
         for(auto v:grid){
             for(auto i:v){
                 asum+=i;
