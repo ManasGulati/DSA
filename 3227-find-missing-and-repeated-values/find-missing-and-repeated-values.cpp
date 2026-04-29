@@ -15,11 +15,8 @@ public:
                 s.insert(i);
             }
         }
-
         asum-=ans[0];
         ans.push_back(abs(esum-asum));
-
         return ans;
-        
     }
 };
