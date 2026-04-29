@@ -16,8 +16,9 @@ public:
             ps[i]=ps[i-1]+nums[i];
         }
         unordered_map<int,int>m;
-        
+
         for(int i=0;i<nums.size();i++){
+            
             if(ps[i]==k){
                 count++;
             }
