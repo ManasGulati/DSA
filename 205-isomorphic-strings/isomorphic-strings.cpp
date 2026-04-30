@@ -14,6 +14,7 @@ public:
             }
             s[i]=m[s[i]];
             set.insert(t[i]);
+            
         }
         return (s==t);
 
