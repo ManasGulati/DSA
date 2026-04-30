@@ -2,6 +2,7 @@ class Solution {
 public:
     bool isIsomorphic(string s, string t) {
         unordered_map <char,char> m;
+        
         unordered_set <char> set;
         for(int i=0;i<s.size();i++){
 
@@ -14,7 +15,7 @@ public:
             }
             s[i]=m[s[i]];
             set.insert(t[i]);
-            
+
         }
         return (s==t);
 
