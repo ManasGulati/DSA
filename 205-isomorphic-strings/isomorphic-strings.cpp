@@ -11,11 +11,13 @@ public:
             if(m.find(s[i])==m.end()&&set.find(t[i])!=set.end()){
 
                 return false;
-                
+
             }
 
             if(m.find(s[i])==m.end()){
+
                 m[s[i]]=t[i];
+                
             }
             s[i]=m[s[i]];
             set.insert(t[i]);
