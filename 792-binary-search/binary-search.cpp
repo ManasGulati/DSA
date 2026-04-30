@@ -21,8 +21,7 @@ public:
 
     }
     int search(vector<int>& nums, int target) {
-        int ans=bs(nums,0,nums.size()-1,target);
-        return ans;
+        return bs(nums,0,nums.size()-1,target);
 
     }
 };
