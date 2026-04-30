@@ -18,8 +18,9 @@ public:
                 m[key]={str};
             }
         }
-        
+
         vector<vector<string>> ans;
+        
         for(auto it:m){
             ans.push_back(it.second);
         }
