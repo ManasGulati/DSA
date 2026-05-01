@@ -6,7 +6,9 @@ public:
             return;
         }
         ans.push_back(v[idx]);
+
         solve(v,idx+1,ans,final);
+        
         ans.pop_back();
         while(idx<v.size()-1&&v[idx]==v[idx+1]){
             idx++;
