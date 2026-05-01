@@ -4,6 +4,7 @@ public:
         if(n==1){
             return s;
         }
+        
         vector<string> ans(n);
         bool down=false;
         int row=0;
