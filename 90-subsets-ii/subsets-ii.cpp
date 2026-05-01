@@ -1,6 +1,7 @@
 class Solution {
 public:
     void solve(vector<int>v,int idx,vector<int>& ans,vector<vector<int>>& final){
+        
         if(idx>=v.size()){
             final.push_back(ans);
             return;
@@ -10,7 +11,7 @@ public:
         solve(v,idx+1,ans,final);
 
         ans.pop_back();
-        
+
         while(idx<v.size()-1&&v[idx]==v[idx+1]){
             idx++;
         }
