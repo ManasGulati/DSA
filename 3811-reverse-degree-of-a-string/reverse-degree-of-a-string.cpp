@@ -2,8 +2,7 @@ class Solution {
 public:
     int reverseDegree(string s) {
 
-        //comment:trying to get 0ms
-        
+        //comment:trying to get 0ms by muliple
 
         unordered_map<char,int>m;
         char start='a';
