@@ -5,6 +5,7 @@ public:
         int j=i;
         int ans=INT_MIN;
         unordered_map<char,int>m;
+        
         while(j<s.length()){
             if(m.find(s[j])==m.end()){
                 m[s[j]]=j;
@@ -14,8 +15,6 @@ public:
                     m[s[j]]=j;
                     j++;
                     continue;
-
-                    
                 }
                 ans=max(ans,(j-i));
                 i=m[s[j]]+1;
