@@ -19,13 +19,9 @@ public:
         int idx=1;
 
         for(auto ch:s){
-           
             ans+=(m[ch]*idx);
-
             idx++;
-
         }
-
         return ans;
         
     }
