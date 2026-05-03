@@ -21,8 +21,10 @@ public:
         for(auto ch:s){
            
             ans+=(m[ch]*idx);
-            
+
             idx++;
+
+        
         }
 
         return ans;
