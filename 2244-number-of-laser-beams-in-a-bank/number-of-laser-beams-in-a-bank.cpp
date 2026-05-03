@@ -9,7 +9,7 @@ public:
         bool er=true;
 
         for(auto str:bank){
-            
+
             int count=0;
             er=true;
             for(auto ch:str){
@@ -18,6 +18,7 @@ public:
                     er=false;
                 }
             }
+            
             if(er==false){
                 if(mul1==-1){
                     mul1=count;
