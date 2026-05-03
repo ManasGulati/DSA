@@ -8,10 +8,11 @@ public:
         unordered_map<char,int>m;
 
         while(j<s.length()){
+            
             if(m.find(s[j])==m.end()){
                 m[s[j]]=j;
                 j++;
-                
+
             }else{
 
                 if(m[s[j]]<i){
