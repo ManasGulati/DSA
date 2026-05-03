@@ -5,7 +5,7 @@ public:
         int ans=0;
 
         int mul1=-1;
-        
+
         int mul2=-1;
 
         bool er=true;
@@ -13,6 +13,7 @@ public:
         for(auto str:bank){
 
             int count=0;
+            
             er=true;
             for(auto ch:str){
                 if(ch=='1'){
