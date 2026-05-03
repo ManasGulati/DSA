@@ -3,8 +3,9 @@ public:
     int reverseDegree(string s) {
 
         unordered_map<char,int>m;
-        
+
         char start='a';
+        
         for(int i=26;i>=1;i--){
             m[start]=i;
             start++;
