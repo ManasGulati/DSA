@@ -5,9 +5,11 @@ public:
         unordered_map<char,int>m;
 
         char start='a';
-        
+
         for(int i=26;i>=1;i--){
+
             m[start]=i;
+            
             start++;
         }
         int ans=0;
