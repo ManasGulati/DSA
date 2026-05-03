@@ -10,11 +10,15 @@ public:
                 m[s[j]]=j;
                 j++;
             }else{
+                if(m[s[j]]<i){
+                    m[s[j]]=j;
+                    j++;
+                    continue;
+                }
                 ans=max(ans,(j-i));
                 i=m[s[j]]+1;
-                m.clear();
-                j=i;
-                continue;
+                m[s[j]]=j;
+                j++;
             }
         }
 
