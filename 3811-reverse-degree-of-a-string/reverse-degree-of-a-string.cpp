@@ -2,7 +2,7 @@ class Solution {
 public:
     int reverseDegree(string s) {
 
-        //comment:trying to get 0ms by multiple commits try
+        //comment:trying to get 0ms by multiple commits using comments
 
         unordered_map<char,int>m;
         char start='a';
