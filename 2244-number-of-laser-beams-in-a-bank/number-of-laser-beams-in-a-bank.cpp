@@ -5,8 +5,9 @@ public:
         int ans=0;
 
         int mul1=-1;
-        int mul2=-1;
         
+        int mul2=-1;
+
         bool er=true;
 
         for(auto str:bank){
