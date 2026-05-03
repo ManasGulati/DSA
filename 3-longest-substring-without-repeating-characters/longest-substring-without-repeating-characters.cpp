@@ -1,7 +1,7 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        
+
         int i=0;
         int j=i;
         int ans=INT_MIN;
@@ -17,6 +17,7 @@ public:
                     j++;
                     continue;
                 }
+                
                 ans=max(ans,(j-i));
                 i=m[s[j]]+1;
                 m[s[j]]=j;
