@@ -4,7 +4,7 @@ public:
 
         unordered_map<char,int>m;
         char start='a';
-        
+
         for(int i=26;i>=1;i--){
             m[start]=i;
             start++;
@@ -12,6 +12,7 @@ public:
 
         int ans=0;
         int idx=1;
+        
         for(auto ch:s){
             ans+=(m[ch]*idx);
             idx++;
