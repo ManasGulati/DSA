@@ -17,12 +17,14 @@ public:
         int ans=0;
 
         int idx=1;
-        
+
         for(auto ch:s){
            
             ans+=(m[ch]*idx);
+            
             idx++;
         }
+
         return ans;
         
     }
