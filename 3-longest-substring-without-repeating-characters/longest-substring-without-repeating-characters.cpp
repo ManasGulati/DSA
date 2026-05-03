@@ -3,7 +3,7 @@ public:
     int lengthOfLongestSubstring(string s) {
 
         //0ms:Achieve through multiple commits:trying
-        //gibb1132187
+        //gibb11546
 
         int i=0;
         int j=i;
