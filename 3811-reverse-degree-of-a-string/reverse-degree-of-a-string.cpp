@@ -3,7 +3,7 @@ public:
     int reverseDegree(string s) {
 
         //comment:trying to get 0ms by multiple commits using comments
-        //f48665515678796543
+        //f486655156787965
 
         unordered_map<char,int>m;
         char start='a';
