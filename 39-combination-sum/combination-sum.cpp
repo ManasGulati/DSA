@@ -2,6 +2,7 @@ class Solution {
 public:
 
     void solve(vector<int> arr, int t, vector<int> &ans, vector<vector<int>> &fin,int i){
+        
         //base case
         if(t==0){
             fin.push_back(ans);
