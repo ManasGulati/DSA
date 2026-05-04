@@ -6,9 +6,7 @@ public:
         if(r<0||c<0||r>=grid.size()||c>=grid.size()){
             return false;
         }
-        if(grid[r][c] != t) return false;
-
-        if(t==(grid.size()*grid.size()-1)){
+        if(grid[r][c]==(grid.size()*grid.size()-1)&&t==(grid.size()*grid.size()-1)){
             return true;
         }
 
