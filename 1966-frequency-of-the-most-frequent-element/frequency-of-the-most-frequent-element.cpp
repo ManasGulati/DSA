@@ -8,8 +8,9 @@ public:
         int res=0;
         long total=0;
         while(r<nums.size()){
-        total+=nums[r];
-        while((long)nums[r]*(r-l+1)>total+k){
+
+            total+=nums[r];
+            while((long)nums[r]*(r-l+1)>total+k){
             total-=nums[l];
             l++;
         }
