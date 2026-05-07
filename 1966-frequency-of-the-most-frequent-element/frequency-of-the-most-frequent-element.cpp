@@ -11,9 +11,9 @@ public:
 
             total+=nums[r];
             while((long)nums[r]*(r-l+1)>total+k){
-            total-=nums[l];
-            l++;
-        }
+                total-=nums[l];
+                l++;
+            }
         res=max(res,r-l+1);
         r++;
        }
