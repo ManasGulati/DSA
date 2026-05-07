@@ -3,10 +3,11 @@ public:
 
     int maxFrequency(vector<int>& nums, int k) {
         sort(nums.begin(),nums.end());
-       int l=0,r=0;
-       int res=0;
-       long total=0;
-       while(r<nums.size()){
+        
+        int l=0,r=0;
+        int res=0;
+        long total=0;
+        while(r<nums.size()){
         total+=nums[r];
         while((long)nums[r]*(r-l+1)>total+k){
             total-=nums[l];
