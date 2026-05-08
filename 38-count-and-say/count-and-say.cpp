@@ -10,9 +10,9 @@ public:
         solve(s,n-1);
         char element=s[0];
         string b;
-        int count=0;
+        int count=1;
         
-        for(int i=0;i<s.length();i++){
+        for(int i=1;i<s.length();i++){
             
             if(s[i]==element){
                 count++;
