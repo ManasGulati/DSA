@@ -18,16 +18,16 @@ public:
             if(s[i]==element){
                 count++;
             }else{
-                b+=to_string(count);
-                b+=element;
+                s+=to_string(count);
+                s+=element;
                 element=s[i];
                 count=1;
             }
         }
 
-        b+=to_string(count);
-        b+=element;
-        s=b;
+        s+=to_string(count);
+        s+=element;
+        s.erase(0,del);
 
     }
     
