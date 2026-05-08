@@ -11,8 +11,9 @@ public:
         char element=s[0];
         string b;
         int count=1;
+        int del=s.length();
         
-        for(int i=1;i<s.length();i++){
+        for(int i=1;i<del;i++){
             
             if(s[i]==element){
                 count++;
