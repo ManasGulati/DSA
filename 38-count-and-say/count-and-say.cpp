@@ -2,6 +2,7 @@ class Solution {
 public:
 
     string solve(string &s,int n){
+
         //base case
         if(n==1){
             return s;
@@ -31,6 +32,7 @@ public:
     }
     
     string countAndSay(int n) {
+        
         string s="1";
         return solve(s,n);
 
