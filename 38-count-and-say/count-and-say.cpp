@@ -1,43 +1,41 @@
 class Solution {
 public:
 
-    string solve(string &s,int n){
-
+    void solve(string &s,int n){
         //base case
-
         if(n==1){
-            return s;
+            return;
         }
-
         //recursion
-
-        string a=solve(s,n-1);
-        char element=a[0];
+        solve(s,n-1);
+        char element=s[0];
         string b;
         int count=0;
         
-        for(int i=0;i<a.length();i++){
+        for(int i=0;i<s.length();i++){
             
-            if(a[i]==element){
+            if(s[i]==element){
                 count++;
             }else{
                 b+=to_string(count);
                 b+=element;
-                element=a[i];
+                element=s[i];
                 count=1;
             }
         }
 
         b+=to_string(count);
         b+=element;
-        return b;
+        s=b;
 
     }
     
     string countAndSay(int n) {
 
         string s="1";
-        return solve(s,n);
+        solve(s,n);
+        return s;
 
     }
+
 };
