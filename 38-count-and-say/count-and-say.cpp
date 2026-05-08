@@ -9,6 +9,7 @@ public:
         }
 
         //recursion
+        
         string a=solve(s,n-1);
         char element=a[0];
         string b;
@@ -25,6 +26,7 @@ public:
                 count=1;
             }
         }
+
         b+=to_string(count);
         b+=element;
         return b;
@@ -34,6 +36,7 @@ public:
     string countAndSay(int n) {
 
         string s="1";
-        return solve(s,n);        
+        return solve(s,n);
+
     }
 };
