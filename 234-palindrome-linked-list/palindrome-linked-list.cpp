@@ -29,6 +29,7 @@ public:
 
         ListNode*slow=head;
         ListNode*fast=head;
+        
         bool odd=false;
         while(fast!=NULL){
             fast=fast->next;
