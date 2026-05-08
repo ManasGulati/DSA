@@ -2,10 +2,12 @@ class Solution {
 public:
 
     void solve(string &s,int n){
+        
         //base case
         if(n==1){
             return;
         }
+
         //recursion
         solve(s,n-1);
         char element=s[0];
