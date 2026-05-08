@@ -4,12 +4,13 @@ public:
     string solve(string &s,int n){
 
         //base case
+
         if(n==1){
             return s;
         }
 
         //recursion
-        
+
         string a=solve(s,n-1);
         char element=a[0];
         string b;
