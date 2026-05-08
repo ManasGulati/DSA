@@ -32,11 +32,8 @@ public:
     }
     
     string countAndSay(int n) {
-        
+
         string s="1";
-        return solve(s,n);
-
-
-        
+        return solve(s,n);        
     }
 };
