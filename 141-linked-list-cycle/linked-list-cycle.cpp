@@ -9,7 +9,7 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        
+
         if(head==NULL){
             return false;
         }
@@ -25,6 +25,7 @@ public:
                 return true;
             }
         }
+
         return false;
         
     }
