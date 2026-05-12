@@ -27,14 +27,11 @@ public:
         vector<Node*>org;
         while(temp!=NULL){
             org.push_back(temp);
-            temp=temp->next;
-        }
-        temp=head;
-        while(temp!=NULL){
             Node*n=new Node(temp->val);
             map.push_back(n);
             temp=temp->next;
         }
+        
         for(int i=0;i<map.size();i++){
             if(head2==NULL){
                 head2=map[i];
