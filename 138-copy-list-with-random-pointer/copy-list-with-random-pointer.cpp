@@ -43,8 +43,6 @@ public:
             if(org[i]->random!=NULL){
                 auto it=find(org.begin(),org.end(),org[i]->random);
                 map[i]->random=map[distance(org.begin(),it)];
-            }else{
-                map[i]->random=NULL;
             }
         }
         if(org[org.size()-1]->random!=NULL){
