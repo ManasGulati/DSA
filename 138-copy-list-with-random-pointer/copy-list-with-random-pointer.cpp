@@ -35,17 +35,17 @@ public:
             map.push_back(n);
             temp=temp->next;
         }
-        for(int i=0;i<map.size()-1;i++){
+        for(int i=0;i<map.size();i++){
             if(head2==NULL){
                 head2=map[i];
             }
-            map[i]->next=map[i+1];
+            if(i!=map.size()-1)map[i]->next=map[i+1];
             if(org[i]->random!=NULL){
                 auto it=find(org.begin(),org.end(),org[i]->random);
                 map[i]->random=map[distance(org.begin(),it)];
             }
         }
-        
+
         if(org[org.size()-1]->random!=NULL){
             auto it=find(org.begin(),org.end(),org[org.size()-1]->random);
             map[org.size()-1]->random=map[distance(org.begin(),it)];
