@@ -10,7 +10,7 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
 
-        //trying to get 0 ms
+        //trying to get 0 ms by repeated submission
 
         if(head==NULL){
             return false;
