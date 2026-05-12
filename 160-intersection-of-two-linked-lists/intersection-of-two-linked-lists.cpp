@@ -10,7 +10,9 @@ class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode*t1=headA;
+
         ListNode*t2=headB;
+        
         ListNode*ans=NULL;
         unordered_set<ListNode*> s;
         while(t1!=NULL){
