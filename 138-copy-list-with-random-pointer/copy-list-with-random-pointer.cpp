@@ -51,12 +51,10 @@ public:
             }
             auto it=find(org.begin(),org.end(),org[org.size()-1]->random);
             map[org.size()-1]->random=map[distance(org.begin(),it)];
-        }else{
-            if(head2==NULL){
+        }
+        if(head2==NULL){
                 head2=map[org.size()-1];
             }
-
-        }
         
         return head2;
         
