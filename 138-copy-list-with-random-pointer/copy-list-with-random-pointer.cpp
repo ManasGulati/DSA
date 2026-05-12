@@ -17,14 +17,16 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
+
         if(head==NULL){
             return NULL;
         }
+
         Node *head2=NULL;
         Node*temp=head;
-        
         vector<Node*>map;
         vector<Node*>org;
+
         while(temp!=NULL){
             org.push_back(temp);
             Node*n=new Node(temp->val);
@@ -42,9 +44,7 @@ public:
                 map[i]->random=map[distance(org.begin(),it)];
             }
         }
-        if(head2==NULL){
-            head2=map[org.size()-1];
-        }
+
         
         return head2;
         
