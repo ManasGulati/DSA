@@ -45,13 +45,14 @@ public:
                 map[i]->random=map[distance(org.begin(),it)];
             }
         }
+        
         if(org[org.size()-1]->random!=NULL){
             auto it=find(org.begin(),org.end(),org[org.size()-1]->random);
             map[org.size()-1]->random=map[distance(org.begin(),it)];
         }
         if(head2==NULL){
-                head2=map[org.size()-1];
-            }
+            head2=map[org.size()-1];
+        }
         
         return head2;
         
