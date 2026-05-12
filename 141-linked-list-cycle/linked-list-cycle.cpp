@@ -9,7 +9,6 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-
         if(head==NULL){
             return false;
         }
@@ -25,7 +24,7 @@ public:
             if(fast==slow&&fast!=NULL){
                 return true;
             }
-            
+
         }
 
         return false;
