@@ -18,12 +18,14 @@ public:
         ListNode *fast=head;
         
         while(fast!=NULL){
+
             slow=slow->next;
             fast=fast->next;
             if(fast!=NULL)fast=fast->next;
             if(fast==slow&&fast!=NULL){
                 return true;
             }
+            
         }
 
         return false;
