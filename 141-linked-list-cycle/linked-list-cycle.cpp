@@ -12,7 +12,6 @@ public:
         if(head==NULL){
             return false;
         }
-
         ListNode *slow=head;
         ListNode *fast=head;
         while(fast!=NULL){
