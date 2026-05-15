@@ -12,7 +12,9 @@ class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
         unordered_set<int>s;
+
         ListNode*temp=head;
+        
         ListNode* prev=NULL;
         while(temp!=NULL){
             if(s.find(temp->val)!=s.end()){
