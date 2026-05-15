@@ -12,7 +12,7 @@ class Solution {
 public:
 
     void solve(ListNode*&hd){
-        
+
         ListNode*head=hd;
         
         while(head->next!=NULL){
@@ -24,6 +24,7 @@ public:
             }
             if(head->next!=NULL)head=head->next;
         }
+        
     }
     void reverse(ListNode*&head){
         ListNode*prev=NULL;
