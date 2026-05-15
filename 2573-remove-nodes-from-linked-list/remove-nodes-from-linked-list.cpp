@@ -12,6 +12,7 @@ class Solution {
 public:
 
     void solve(ListNode*&hd){
+        
         ListNode*head=hd;
         
         while(head->next!=NULL){
