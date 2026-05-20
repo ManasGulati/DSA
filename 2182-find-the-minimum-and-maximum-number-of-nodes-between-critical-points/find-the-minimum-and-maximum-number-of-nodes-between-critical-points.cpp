@@ -1,0 +1,82 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> nodesBetweenCriticalPoints(ListNode* head) {
+        vector<int>ans={-1,-1};
+        int len=1;
+        ListNode*temp=head;
+        ListNode*tail;
+
+        while(temp->next!=NULL){
+            temp=temp->next;
+            len++;
+        }
+        tail=temp;
+        if(len<4)return ans;
+
+        int idx=1;
+        int minI=-1;
+        int prevEle=-1;
+        int maxI=-1;
+        int c1=-1;
+        int c2=-1;
+
+        temp=head;
+        while(temp!=NULL){
+            if(temp==head){
+                prevEle=temp->val;
+                temp=temp->next;
+                idx++;
+                continue;
+            }else if(temp==tail){
+                break;
+            }else{
+                if((temp->val>prevEle && temp->val>(temp->next)->val)||(temp->val<prevEle && temp->val<(temp->next)->val)){
+                    
+                    if(c1==-1){
+                        c1=idx;
+                        idx++;
+                        prevEle=temp->val;
+                        temp=temp->next;
+                        continue;
+                    }else if(c2==-1){
+                        c2=idx;
+                        idx++;
+                        prevEle=temp->val;
+                        temp=temp->next;
+                        minI=c2-c1;
+                        maxI=c2-c1;
+                        continue;
+                    }else{
+                        minI=min(minI,idx-c2);
+                        maxI=max(maxI,idx-c1);
+                        c2=idx;
+                        idx++;
+                        prevEle=temp->val;
+                        temp=temp->next;
+                        continue;
+                    }
+
+                }else{
+                    idx++;
+                    prevEle=temp->val;
+                    temp=temp->next;
+                }
+            }
+        }
+        ans[0]=minI;
+        ans[1]=maxI;
+        
+        return ans;
+        
+    }
+};
