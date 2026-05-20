@@ -11,10 +11,9 @@
 class Solution {
 public:
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
+
         vector<int>ans={-1,-1};
-
         ListNode*temp=head;        
-
         int idx=1;
         int prevEle=-1;
         int c1=-1;
@@ -31,17 +30,14 @@ public:
                     
                     if(c1==-1){
                         c1=idx;  
-                        
                     }else if(c2==-1){
                         c2=idx;  
                         ans[0]=c2-c1;
                         ans[1]=c2-c1;
-                        
                     }else{
                         ans[0]=min(ans[0],idx-c2);
                         ans[1]=max(ans[1],idx-c1);
-                        c2=idx;  
-                        
+                        c2=idx;   
                     }
                 }
             }
