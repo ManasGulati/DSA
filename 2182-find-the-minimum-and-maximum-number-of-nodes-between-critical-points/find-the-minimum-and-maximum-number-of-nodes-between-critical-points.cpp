@@ -16,9 +16,7 @@ public:
         ListNode*temp=head;        
 
         int idx=1;
-
         int prevEle=-1;
-
         int c1=-1;
         int c2=-1;
 
@@ -35,7 +33,7 @@ public:
                     
                     if(c1==-1){
                         c1=idx;  
-                        continue;
+                        
                     }else if(c2==-1){
                         c2=idx;  
                         ans[0]=c2-c1;
