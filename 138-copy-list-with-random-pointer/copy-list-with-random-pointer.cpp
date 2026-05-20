@@ -18,38 +18,36 @@ class Solution {
 public:
     Node* copyRandomList(Node* head) {
 
-        if(head==NULL){
-            return NULL;
-        }
-
-        Node *head2=NULL;
         Node*temp=head;
-        vector<Node*>map;
-        vector<Node*>org;
+        Node*head2=NULL;
+        Node*temp2;
 
-        while(temp!=NULL){
-            org.push_back(temp);
-            Node*n=new Node(temp->val);
-            map.push_back(n);
-            temp=temp->next;
-        }
+        unordered_map<Node*,Node*>map;
         
-        for(int i=0;i<map.size();i++){
-
+        while(temp!=NULL){
+            Node*n=new Node(temp->val);
+            map[temp]=n;
             if(head2==NULL){
-                head2=map[i];
-            }
-
-            if(i!=map.size()-1)map[i]->next=map[i+1];
-
-            if(org[i]->random!=NULL){
-                auto it=find(org.begin(),org.end(),org[i]->random);
-                map[i]->random=map[distance(org.begin(),it)];
+                head2=n;
+                temp2=head2;
+                temp=temp->next;
+                continue;
             }
             
+            temp2->next=n;
+            temp2=temp2->next;
+            temp=temp->next;
+   
         }
-
-        
+        temp=head;
+        temp2=head2;
+        while(temp!=NULL){
+            if(temp->random!=NULL){
+                temp2->random=map[temp->random];
+            }
+            temp=temp->next;
+            temp2=temp2->next;
+        }
         return head2;
         
     }
