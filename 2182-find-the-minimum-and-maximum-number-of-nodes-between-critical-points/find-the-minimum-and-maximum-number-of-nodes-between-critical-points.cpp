@@ -33,10 +33,10 @@ public:
 
         temp=head;
         while(temp!=NULL){
+            prevEle=temp->val;
+            temp=temp->next;
+            idx++;
             if(temp==head){
-                prevEle=temp->val;
-                temp=temp->next;
-                idx++;
                 continue;
             }else if(temp==tail){
                 break;
@@ -45,15 +45,11 @@ public:
                     
                     if(c1==-1){
                         c1=idx;
-                        idx++;
-                        prevEle=temp->val;
-                        temp=temp->next;
+                        
                         continue;
                     }else if(c2==-1){
                         c2=idx;
-                        idx++;
-                        prevEle=temp->val;
-                        temp=temp->next;
+                        
                         ans[0]=c2-c1;
                         ans[1]=c2-c1;
                         continue;
@@ -61,16 +57,10 @@ public:
                         ans[0]=min(ans[0],idx-c2);
                         ans[1]=max(ans[1],idx-c1);
                         c2=idx;
-                        idx++;
-                        prevEle=temp->val;
-                        temp=temp->next;
+                        
                         continue;
                     }
 
-                }else{
-                    idx++;
-                    prevEle=temp->val;
-                    temp=temp->next;
                 }
             }
         }
