@@ -25,9 +25,9 @@ public:
         if(len<4)return ans;
 
         int idx=1;
-        int minI=-1;
+
         int prevEle=-1;
-        int maxI=-1;
+
         int c1=-1;
         int c2=-1;
 
@@ -60,7 +60,6 @@ public:
                     }else{
                         ans[0]=min(ans[0],idx-c2);
                         ans[1]=max(ans[1],idx-c1);
-                        
                         c2=idx;
                         idx++;
                         prevEle=temp->val;
