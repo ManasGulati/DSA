@@ -14,15 +14,13 @@ public:
         vector<int>ans={-1,-1};
         int len=1;
         ListNode*temp=head;
-        ListNode*tail;
 
         while(temp->next!=NULL){
             temp=temp->next;
             len++;
         }
 
-        tail=temp;
-        if(len<4)return ans;
+        
 
         int idx=1;
 
