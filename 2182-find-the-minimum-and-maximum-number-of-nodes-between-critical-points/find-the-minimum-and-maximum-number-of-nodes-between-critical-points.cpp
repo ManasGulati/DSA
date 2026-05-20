@@ -38,29 +38,25 @@ public:
             idx++;
             if(temp==head){
                 continue;
-            }else if(temp==tail){
+            }else if(temp->next==NULL){
                 break;
             }else{
                 if((temp->val>prevEle && temp->val>(temp->next)->val)||(temp->val<prevEle && temp->val<(temp->next)->val)){
                     
                     if(c1==-1){
-                        c1=idx;
-                        
+                        c1=idx;  
                         continue;
                     }else if(c2==-1){
-                        c2=idx;
-                        
+                        c2=idx;  
                         ans[0]=c2-c1;
                         ans[1]=c2-c1;
                         continue;
                     }else{
                         ans[0]=min(ans[0],idx-c2);
                         ans[1]=max(ans[1],idx-c1);
-                        c2=idx;
-                        
+                        c2=idx;  
                         continue;
                     }
-
                 }
             }
         }
