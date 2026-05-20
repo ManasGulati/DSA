@@ -20,6 +20,7 @@ public:
             temp=temp->next;
             len++;
         }
+
         tail=temp;
         if(len<4)return ans;
 
@@ -53,12 +54,13 @@ public:
                         idx++;
                         prevEle=temp->val;
                         temp=temp->next;
-                        minI=c2-c1;
-                        maxI=c2-c1;
+                        ans[0]=c2-c1;
+                        ans[1]=c2-c1;
                         continue;
                     }else{
-                        minI=min(minI,idx-c2);
-                        maxI=max(maxI,idx-c1);
+                        ans[0]=min(ans[0],idx-c2);
+                        ans[1]=max(ans[1],idx-c1);
+                        
                         c2=idx;
                         idx++;
                         prevEle=temp->val;
@@ -73,8 +75,7 @@ public:
                 }
             }
         }
-        ans[0]=minI;
-        ans[1]=maxI;
+        
         
         return ans;
         
