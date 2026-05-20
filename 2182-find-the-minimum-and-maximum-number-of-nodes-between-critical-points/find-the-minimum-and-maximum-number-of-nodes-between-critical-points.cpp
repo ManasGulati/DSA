@@ -25,7 +25,7 @@ public:
             temp=temp->next;
             idx++;
             if(temp==head){
-                continue;
+                
             }else if(temp->next==NULL){
                 break;
             }else{
@@ -38,12 +38,12 @@ public:
                         c2=idx;  
                         ans[0]=c2-c1;
                         ans[1]=c2-c1;
-                        continue;
+                        
                     }else{
                         ans[0]=min(ans[0],idx-c2);
                         ans[1]=max(ans[1],idx-c1);
                         c2=idx;  
-                        continue;
+                        
                     }
                 }
             }
