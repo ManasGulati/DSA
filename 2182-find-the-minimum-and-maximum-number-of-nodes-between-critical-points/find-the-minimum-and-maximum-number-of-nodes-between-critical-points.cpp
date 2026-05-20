@@ -24,9 +24,7 @@ public:
             prevEle=temp->val;
             temp=temp->next;
             idx++;
-            if(temp==head){
-                
-            }else if(temp->next==NULL){
+            if(temp->next==NULL){
                 break;
             }else{
                 if((temp->val>prevEle && temp->val>(temp->next)->val)||(temp->val<prevEle && temp->val<(temp->next)->val)){
