@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* mergeNodes(ListNode* head) {
+        
         int bal=0;
         ListNode*temp=head->next;
         ListNode*head2=NULL;
