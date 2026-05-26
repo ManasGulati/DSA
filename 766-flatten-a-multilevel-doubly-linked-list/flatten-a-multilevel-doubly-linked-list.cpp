@@ -21,9 +21,7 @@ public:
             }else{
                 Node*curr=temp->child;
                 Node*resume=temp->next;
-                while(curr->prev!=NULL){
-                    curr=curr->prev;
-                }
+                
                 curr->prev=temp;
                 temp->next=curr;
                 while(curr->next!=NULL){
@@ -35,6 +33,7 @@ public:
                 
                 temp->child=NULL;
                 temp=temp->next;
+
             }
         }
         return head;
