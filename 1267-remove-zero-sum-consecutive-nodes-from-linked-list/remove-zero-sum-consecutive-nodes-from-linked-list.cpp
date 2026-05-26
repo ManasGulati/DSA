@@ -11,7 +11,6 @@
 class Solution {
 public:
     ListNode* removeZeroSumSublists(ListNode* head) {
-        
         unordered_map<int,ListNode*>m;
         ListNode*n=new ListNode(0);
         n->next=head;
