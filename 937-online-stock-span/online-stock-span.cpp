@@ -15,13 +15,14 @@ public:
         }
         
         int ans=0;
+        
         while(!s.empty()&&s.top().first<=price){
             ans+=s.top().second;
             s.pop();
         }
 
         s.push({price,ans+1});
-        
+
         return ans+1; 
 
     }
