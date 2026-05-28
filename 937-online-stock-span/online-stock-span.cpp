@@ -11,18 +11,15 @@ public:
             s.push({price,1});
             return 1;
         }
-        if(s.top().first<=price){
-            int ans=0;
-            while(!s.empty()&&s.top().first<=price){
-                ans+=s.top().second;
-                s.pop();
-            }
-            s.push({price,ans+1});
-            return ans+1;
-        }else{
-            s.push({price,1});
-            return 1;
+        
+        int ans=0;
+        while(!s.empty()&&s.top().first<=price){
+            ans+=s.top().second;
+            s.pop();
         }
+        s.push({price,ans+1});
+        return ans+1;
+        
         
         
         
