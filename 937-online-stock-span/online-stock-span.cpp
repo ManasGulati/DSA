@@ -4,6 +4,7 @@ public:
     StockSpanner() {
                
     }
+    
     int next(int price) {
         
         if(s.empty()){
