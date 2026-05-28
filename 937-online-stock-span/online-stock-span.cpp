@@ -3,19 +3,15 @@ public:
 
     stack<pair<int,int>>s;
 
-    StockSpanner() {
-               
-    }
-
+    StockSpanner() {}
     int next(int price) {
-        
         if(s.empty()){
             s.push({price,1});
             return 1;
         }
         
         int ans=0;
-        
+
         while(!s.empty()&&s.top().first<=price){
             ans+=s.top().second;
             s.pop();
