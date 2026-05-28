@@ -21,8 +21,9 @@ public:
         }
 
         s.push({price,ans+1});
+        
         return ans+1; 
-               
+
     }
 };
 
