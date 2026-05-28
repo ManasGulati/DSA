@@ -1,10 +1,12 @@
 class StockSpanner {
 public:
-    stack<pair<int,int>>s; 
+
+    stack<pair<int,int>>s;
+
     StockSpanner() {
                
     }
-    
+
     int next(int price) {
         
         if(s.empty()){
@@ -17,8 +19,10 @@ public:
             ans+=s.top().second;
             s.pop();
         }
+
         s.push({price,ans+1});
-        return ans+1;        
+        return ans+1; 
+               
     }
 };
 
