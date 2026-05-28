@@ -4,7 +4,6 @@ public:
     StockSpanner() {
                
     }
-    
     int next(int price) {
         
         if(s.empty()){
@@ -18,12 +17,7 @@ public:
             s.pop();
         }
         s.push({price,ans+1});
-        return ans+1;
-        
-        
-        
-        
-        
+        return ans+1;        
     }
 };
 
