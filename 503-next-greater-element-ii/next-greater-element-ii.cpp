@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& n) {
-        
+
         vector<int>ans(n);
         stack<int>s;
         ans.insert(ans.end(),n.begin(),n.end());
@@ -18,6 +18,7 @@ public:
                     s.pop();
                 }                  
             }
+            
             s.push(ans[i]);
             if(idx<0){
                 idx=n.size()-1;
