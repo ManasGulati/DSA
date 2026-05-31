@@ -1,37 +1,24 @@
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& n) {
-        
-        stack<int>s;
-        vector<int>ans(n);
 
-        
-        int idx=n.size()-1;
-        int i=(n.size()*2)-1;
+        int sz = n.size();
+        vector<int> ans(sz, -1);
+        stack<int> s;
 
-        while(i>=0){
-            int ge=-1;
-            while(!s.empty()){
-                if(s.top()>n[i%n.size()]){
-                    ge=s.top();
-                    break;
-                }else{
-                    s.pop();
-                }                  
+        for (int i = 2 * sz - 1; i >= 0; i--) {
+
+            while (!s.empty() && s.top() <= n[i % sz])
+                s.pop();
+
+            if (i < sz) {
+                if (!s.empty())
+                    ans[i] = s.top();
             }
 
-
-            s.push(n[i%n.size()]);
-            if(idx<0){
-                idx=n.size()-1;
-            }
-            cout<<idx<<ge<<endl;
-            ans[idx]=ge;
-            i--;
-            idx--;
+            s.push(n[i % sz]);
         }
-        
+
         return ans;
-        
     }
 };
