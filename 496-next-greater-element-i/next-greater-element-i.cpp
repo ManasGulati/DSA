@@ -13,24 +13,18 @@ public:
                 int ge=-1;
                 while(!s.empty()){
                     
-                    if(s.top()>nums2[i]){
-                        
+                    if(s.top()>nums2[i]){  
                         ge=s.top();
                         break;
-                    }else{
-                        
-                        s.pop();
-                        
+                    }else{  
+                        s.pop();   
                     }
-                    
-
                 }
                 s.push(nums2[i]);
                 ans[m[nums2[i]]]=ge;
             }else{
                 continue;
             }
-
         }
         return ans;
     }    
