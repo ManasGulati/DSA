@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& n) {
+        
         vector<int>ans(n);
         stack<int>s;
         ans.insert(ans.end(),n.begin(),n.end());
