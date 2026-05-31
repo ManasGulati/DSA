@@ -7,7 +7,6 @@ public:
         stack<int> s;
 
         for (int i = 2 * sz - 1; i >= 0; i--) {
-
             while (!s.empty() && s.top() <= n[i % sz])
                 s.pop();
 
