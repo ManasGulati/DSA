@@ -15,7 +15,6 @@ public:
                 if (!s.empty())
                     ans[i] = s.top();
             }
-
             s.push(n[i % sz]);
         }
 
