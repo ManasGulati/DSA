@@ -20,6 +20,7 @@ public:
                 }                  
             }
 
+
             s.push(n[i%n.size()]);
             if(idx<0){
                 idx=n.size()-1;
