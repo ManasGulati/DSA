@@ -26,8 +26,6 @@ public:
             i--;
             idx--;
         }
-
-
         
         return n;
         
