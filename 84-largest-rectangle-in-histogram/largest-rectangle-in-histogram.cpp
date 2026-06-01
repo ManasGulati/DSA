@@ -1,7 +1,7 @@
 class Solution {
 public:
     int largestRectangleArea(vector<int>& h) {
-        
+
         stack<int>s;
         //right smallest
         vector<int>r(h.size());
@@ -53,6 +53,7 @@ public:
         }
 
         //area
+        
         int ans=0;
         for(int idx=0;idx<h.size();idx++){
             int area=h[idx]*(r[idx]-l[idx]+1);
