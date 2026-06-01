@@ -1,6 +1,7 @@
 class Solution {
 public:
     int largestRectangleArea(vector<int>& h) {
+        
         stack<int>s;
         //right smallest
         vector<int>r(h.size());
