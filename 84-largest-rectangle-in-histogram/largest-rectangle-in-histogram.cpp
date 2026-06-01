@@ -53,8 +53,9 @@ public:
         }
 
         //area
-        
+
         int ans=0;
+        
         for(int idx=0;idx<h.size();idx++){
             int area=h[idx]*(r[idx]-l[idx]+1);
             
