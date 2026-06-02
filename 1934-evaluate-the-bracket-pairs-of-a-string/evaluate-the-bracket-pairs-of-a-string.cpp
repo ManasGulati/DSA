@@ -5,9 +5,11 @@ public:
         string key;
         string ans;
         bool flag=false;
+
         for(int i=0;i<k.size();i++){
             m[k[i][0]]=k[i][1];
         }
+
         for(char ch:s){
             if(ch=='('){
                 flag=true;
@@ -29,6 +31,7 @@ public:
                 key.push_back(ch);
             }
         }
+        
         return ans;
         
     }
