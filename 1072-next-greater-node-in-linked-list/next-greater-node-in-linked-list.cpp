@@ -21,11 +21,14 @@ public:
         int count=l.size()-2;
         s.push(l[l.size()-1]);
         ans[l.size()-1]=0;
+        
         while(count>=0){
+
             if(!s.empty()&&l[count]<s.top()){
                 ans[count]=s.top();
                 s.push(l[count]);
                 count--;
+
             }else{
                 while(!s.empty()&&l[count]>=s.top()){
                     s.pop();
@@ -33,6 +36,7 @@ public:
                 s.empty()?ans[count]=0:ans[count]=s.top();
                 s.push(l[count]);
                 count--;
+
             }
             
         }
