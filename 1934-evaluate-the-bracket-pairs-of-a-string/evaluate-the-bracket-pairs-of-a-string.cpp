@@ -11,6 +11,7 @@ public:
         }
 
         for(char ch:s){
+
             if(ch=='('){
                 flag=true;
                 continue;
@@ -24,6 +25,7 @@ public:
                 key.clear();                
                 continue;
             }
+            
             if(!flag){
                 ans.push_back(ch);
                 
@@ -31,7 +33,7 @@ public:
                 key.push_back(ch);
             }
         }
-        
+
         return ans;
         
     }
