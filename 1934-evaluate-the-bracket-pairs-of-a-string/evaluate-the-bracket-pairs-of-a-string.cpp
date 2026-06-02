@@ -13,25 +13,27 @@ public:
         for(char ch:s){
 
             if(ch=='('){
+
                 flag=true;
                 continue;
+
             }else if(ch==')'){
+
                 flag=false;
                 if(m.find(key)==m.end()){
                     ans.push_back('?');
+
                 }else{
+
                     ans.append(m[key]);
+
                 }
                 key.clear();                
                 continue;
+
             }
-            
-            if(!flag){
-                ans.push_back(ch);
-                
-            }else{
-                key.push_back(ch);
-            }
+
+            (!flag)?ans.push_back(ch):key.push_back(ch);
         }
 
         return ans;
