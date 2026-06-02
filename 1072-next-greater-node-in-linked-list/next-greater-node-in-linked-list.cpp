@@ -11,8 +11,9 @@
 class Solution {
 public:
     vector<int> nextLargerNodes(ListNode* head) {
-        vector<int>l;
         
+        vector<int>l;
+
         while(head!=NULL){
             l.push_back(head->val);
             head=head->next;
