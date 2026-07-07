@@ -13,9 +13,11 @@ public:
         for(auto i:str){
             ans+=i;
         }
+
         if(ans[0]=='0'){
             return "0";
         }
+        
         return ans;
         
     }
