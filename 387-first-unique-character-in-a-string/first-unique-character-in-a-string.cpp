@@ -1,7 +1,6 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-
         unordered_map <char,int> m;
         queue <int> q;
         for(char ch:s){
@@ -23,6 +22,6 @@ public:
             count++;
         }
         return -1;
-        
+
     }
 };
