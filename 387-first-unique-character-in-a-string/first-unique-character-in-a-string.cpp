@@ -1,6 +1,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
+        
         unordered_map <char,int> m;
         queue <int> q;
         for(char ch:s){
@@ -12,6 +13,7 @@ public:
             q.push(ch);
         }
         int count=0;
+
         while(!q.empty()){
             char ch=q.front();
             q.pop();
