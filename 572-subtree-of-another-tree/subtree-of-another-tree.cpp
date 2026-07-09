@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    bool iden(TreeNode* p, TreeNode* q){
+    bool iden(TreeNode* &p, TreeNode* &q){
         //base case
         if(p==NULL||q==NULL){
             return p==q;
@@ -26,7 +26,7 @@ public:
 
     
 
-    bool isSubtree(TreeNode* root, TreeNode* sroot) {
+    bool isSubtree(TreeNode* &root, TreeNode* &sroot) {
         if(root==NULL){
             return false;
         }
