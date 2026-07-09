@@ -24,8 +24,6 @@ public:
         return(p->val==q->val);
     }
 
-    
-
     bool isSubtree(TreeNode* &root, TreeNode* &sroot) {
         if(root==NULL){
             return false;
