@@ -1,23 +1,29 @@
 class Solution {
 public:
-
-    int countint(string s,int i,int j){
-        int co=0;
-        while(i>=0&&j<s.length()&&s[i]==s[j]){
-            co++;
-            i--;
-            j++;
-        }
-        return co;
-    }
     int countSubstrings(string s) {
         int count=0;
+        int l=0,r=0;
         for(int i=0;i<s.length();i++){
-            int a=countint(s,i,i);
-            int b=countint(s,i,i+1);
-            count+=a+b;
+            l=i;
+            r=i;
+            
+            while(l>=0&&r<=s.length()&&s[l]==s[r]){
+                count++;
+                l--;
+                r++;
+            }
+            
+            l=i;
+            r=i+1;
+
+            while(l>=0&&r<=s.length()&&s[l]==s[r]){
+                count++;
+                l--;
+                r++;
+            }
+            
         }
         return count;
-
+        
     }
 };
